@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/ltphat2204/clothes-store/pkg/server"
+	"github.com/ltphat2204/clothes-store/internal/app"
 )
 
 func main() {

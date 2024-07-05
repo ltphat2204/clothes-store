@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
-	"github.com/ltphat2204/clothes-store/pkg/routes"
+	"github.com/ltphat2204/clothes-store/internal/routes"
 )
 
 func init() {

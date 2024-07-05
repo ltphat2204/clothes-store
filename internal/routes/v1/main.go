@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
   
-func CreateRoutesV1(app *gin.Engine) {
+func CreateRoutes(app *gin.Engine) {
 	r := app.Group("/v1")
 	{
 		r.GET("/helloworld", func(c *gin.Context) {

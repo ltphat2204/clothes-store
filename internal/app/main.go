@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
-	"github.com/ltphat2204/clothes-store/internal/routes"
+	"github.com/ltphat2204/clothes-store/internal/routes/v1"
 )
 
 func init() {
@@ -23,7 +23,7 @@ func CreateServer() *server {
 
 	app.StaticFS("/assets", http.Dir("assets"))
 
-	routes.CreateRoutesV1(app)
+	routes.CreateRoutes(app)
 
 	return &server{
 		router: app,

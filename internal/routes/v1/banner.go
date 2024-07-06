@@ -9,6 +9,7 @@ import (
 func createBannerRoutes(r *gin.RouterGroup) {
 	bannerRoutes := r.Group("/banner")
 	{
+		bannerRoutes.GET("", banner.GetBanners(database.Database))
 		bannerRoutes.POST("", banner.CreateBanner(database.Database))
 	}
 }

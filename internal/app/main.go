@@ -2,17 +2,10 @@ package server
 
 import (
 	"net/http"
+
 	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
 	"github.com/ltphat2204/clothes-store/internal/routes/v1"
 )
-
-func init() {
-	godotenv.Load(".env.local")
-	godotenv.Load(".env.development")
-	godotenv.Load(".env.production")
-	godotenv.Load(".env")
-}
 
 type server struct {
 	router *gin.Engine

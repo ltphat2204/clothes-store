@@ -14,5 +14,7 @@ func CreateRoutes(app *gin.Engine) {
 				"message": "Hello world!",
 			})
 		})
+		createBannerRoutes(r)
+		createUploadRoutes(r)
 	}
 }

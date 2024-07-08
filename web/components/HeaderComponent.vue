@@ -4,7 +4,7 @@ const isMobileOpen = ref(false);
 <template>
     <header class="px-5 py-3 flex justify-between text-2xl">
         <div class="flex items-center">
-            <Icon name="quill:hamburger-sidebar" @click="isMobileOpen = true"/>
+            <Icon name="quill:hamburger-sidebar" @click="isMobileOpen = true" class="md:hidden"/>
             <NuxtLink to="/" class="h-8 w-auto">
                 <img src="/brand.webp" alt="Brand Logo" class="h-full w-auto"/>
             </NuxtLink>

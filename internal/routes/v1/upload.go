@@ -32,7 +32,7 @@ func createUploadRoutes(r *gin.RouterGroup) {
 
 		c.JSON(http.StatusOK, gin.H{
 			"message": "File uploaded successfully",
-			"url": dst,
+			"url": "/" + dst,
 		})
 	})
 }

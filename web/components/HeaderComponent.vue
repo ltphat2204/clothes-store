@@ -45,7 +45,7 @@ const hotKeys = computed(() => {
         </div>
     </header>
     <div class="md:fixed relative bg-black/50 w-screen md:h-screen h-fit flex justify-end top-0 transition-all duration-500 ease-in-out" :class="isSearchOpen ? 'opacity-100 z-20' : 'md:opacity-0 z-0'">
-        <div class="relative w-full max-w-[500px] bg-white h-fit md:h-screen md:py-16 md:px-8 p-0 transition-all duration-500 ease-in-out" :class="isSearchOpen ? 'translate-x-0' : 'translate-x-0 md:translate-x-full'">
+        <div class="relative w-full md:max-w-[500px] bg-white h-fit md:h-screen md:py-16 md:px-8 p-0 transition-all duration-500 ease-in-out pb-4" :class="isSearchOpen ? 'translate-x-0' : 'translate-x-0 md:translate-x-full'">
             <div class="mb-8 items-center gap-2 cursor-pointer hidden md:flex" @click="isSearchOpen = false"><Icon name="material-symbols:arrow-left-alt" class="text-2xl"/>Thoát</div>
             <div class="border rounded-lg px-3 py-1 mx-5 flex items-center gap-2" :class="isInputFocus ? 'border-black' : 'border-gray-300'">
                 <Icon name="material-symbols:search" class="text-2xl"/>

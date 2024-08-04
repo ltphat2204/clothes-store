@@ -1,3 +1,9 @@
+<script setup>
+const runtimeConfig = useRuntimeConfig()
+const { data, error } = await useFetch('/banner', {
+    baseURL: runtimeConfig.public.api,
+})
+</script>
 <template>
-    <div></div>
+    <SliderComponent :images="data" />
 </template>
